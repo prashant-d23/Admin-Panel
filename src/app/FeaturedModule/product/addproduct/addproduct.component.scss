@@ -1,0 +1,73 @@
+.height{
+  height: 60px;
+}
+label{
+  color: grey;
+  font-weight: 500;
+}
+input,textarea,select{
+  border: 1px solid rgb(196, 190, 190);
+}
+.container-style{
+  border: 1px solid rgb(134, 130, 130);
+  border-radius: 8px;
+  background-color: white;
+}
+.container{
+  width: 75vw;
+  margin-left: 15px;
+}
+
+.shade{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image-upload {
+  position: relative;
+  display: inline-block;
+  background-image: url('../../../../assets/drop.png');
+  // background-size: ;
+}
+
+.image-upload input[type="file"] {
+  display: none;
+}
+
+.drag-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  width: 46.5vw;
+  height: 40vh;
+  cursor: pointer;
+}
+
+.upload-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon i {
+  font-size: 2em;
+}
+
+.upload-icon span {
+  margin-top: 0.5em;
+}
+
+.align-img {
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  opacity: 95%;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 1em;
+}

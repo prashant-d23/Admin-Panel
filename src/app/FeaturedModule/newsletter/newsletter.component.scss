@@ -1,0 +1,46 @@
+
+
+//For Navigation Buttons
+.btn-inline{
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 600px;
+    margin-top: 50px;
+    height: 30px;
+   }
+   //For button
+   .nav-btn{
+  
+    border-radius: 0px;
+     border: none;
+     min-width: 200px;
+     border: 5px solid none;
+     
+   }
+   
+   //for RouterLinkActive
+   .nav-btn-active{
+    
+    color: rgb(250, 6, 120);
+    border-bottom: 5px solid rgb(250, 6, 120);
+  
+  }
+
+//   //Heading Background  News Record/Subscriber Components
+
+// .bg-news-img{
+//   max-width:100% ;
+//   color:rgb(250, 6, 120) ;
+//   font-size: 40px;
+//   background-image: url('https://st.depositphotos.com/1032463/3890/i/950/depositphotos_38904715-stock-photo-old-ripped-newspapers.jpg');
+//   background-size: cover;
+//   background-blend-mode: darken;
+//   padding: 5px;
+//   margin-bottom: 10px;
+//   background-position: 70% 25%;
+//   background-blend-mode:darken;
+//   padding: 30px;
+//   min-width: 900px;
+//   text-shadow: 2px 1px 5px rgb(95, 95, 95);
+//   }

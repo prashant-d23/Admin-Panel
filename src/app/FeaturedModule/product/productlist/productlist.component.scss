@@ -1,0 +1,50 @@
+.mat-mdc-table {
+  table-layout: auto;
+  white-space: normal;
+  background-color: #FF007F;
+  border-radius: 15px 15px 0px 0px;
+  width: 70vw;
+}
+th{
+  color: white;
+  font-size: 16px;
+  border-radius: 13px;
+  text-align: center;
+}
+td{
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
+ngb-rating {
+  color: #FFC107;
+  font-size: 25px;
+}
+
+.margin{
+  border: 1px solid black;
+}
+
+.img{
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 7px;
+}
+.product-details{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.spinner{
+  position: absolute;
+  left: 46%;
+  top: 45%;
+}
+.container{
+  margin-left: 6px;
+}
+
+#cursor{
+  cursor: pointer;
+}

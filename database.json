@@ -1,0 +1,203 @@
+{
+  "category": [
+    {
+      "CreatedAt": "2023-06-25T18:27:45.009Z",
+      "category": "himalaya baby shampoo",
+      "description": "babyshamp",
+      "id": 7
+    },
+    {
+      "CreatedAt": "2023-06-23T11:11:58.837Z",
+      "category": "shampoo",
+      "description": "baby shampoo",
+      "id": 10
+    },
+    {
+      "CreatedAt": "2023-06-25T12:01:56.031Z",
+      "category": "toys",
+      "description": "ball",
+      "id": 26
+    },
+    {
+      "CreatedAt": "2023-06-25T18:18:57.874Z",
+      "category": "shoes",
+      "description": "woodland",
+      "id": 27
+    }
+  ],
+  "products": [
+    {
+      "created_at": "2023-06-26T13:58:02.253Z",
+      "productName": "TV",
+      "description": "Lenovo",
+      "category": "Electronics",
+      "brand": "Lenovo",
+      "status": "In stock",
+      "sizes": "15.6",
+      "colors": "black",
+      "tags": "gadget",
+      "productImage": "https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100",
+      "productCode": "dfdf",
+      "product_SKU": "sfd",
+      "gender": "male",
+      "qunatity": "2",
+      "regularPrice": "20000",
+      "salePrice": "12000",
+      "featured": true,
+      "id": 1
+    },
+    {
+      "created_at": "2023-06-26T13:58:02.253Z",
+      "productName": "Laptop",
+      "description": "Lenovo",
+      "category": "Electronics",
+      "brand": "Lenovo",
+      "status": "In stock",
+      "sizes": "15.6",
+      "colors": "black",
+      "tags": "gadget",
+      "productImage": "https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100",
+      "productCode": "dfdf",
+      "product_SKU": "sfd",
+      "gender": "male",
+      "qunatity": "2",
+      "regularPrice": "20000",
+      "salePrice": "12000",
+      "featured": true,
+      "id": 1
+    }
+  ],
+  "credentials": [
+    {
+      "username": "velocity1@gmail.com",
+      "gender": "Male",
+      "contactnum": "23456",
+      "password": "dsfsfsf",
+      "id": 1
+    },
+    {
+      "username": "Harshada",
+      "gender": "Female",
+      "contactnum": "1111222233",
+      "password": "Harsh123",
+      "id": 2
+    }
+  ],
+  "bardata": [
+    10,
+    20,
+    50,
+    20,
+    40,
+    10,
+    50,
+    30,
+    20,
+    50,
+    40,
+    20
+  ],
+  "piedata": [
+    60,
+    10,
+    5,
+    10,
+    15
+  ],
+  "newsSource": [
+    {
+      "news_head": "News",
+      "article": "Csfcdfcd",
+      "date": "2023-06-26",
+      "id": 27
+    },
+    {
+      "news_head": "hvfcv fdvgs",
+      "article": "gnghjgh",
+      "date": "2023-06-26",
+      "id": 28
+    },
+    {
+      "news_head": "",
+      "article": "",
+      "date": "2023-06-29",
+      "id": 29
+    },
+    {
+      "news_head": "abc",
+      "article": "abc",
+      "date": "2023-06-29",
+      "id": 30
+    }
+  ],
+  "Subs": [
+    {
+      "name": "Tyson",
+      "email": "tyson@95.gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Tyson",
+      "email": "tyson@95.gmail.com",
+      "id": 7
+    }
+  ],
+  "orders": [
+    {
+      "imageUrl": "https://bellavitaorganic.com/cdn/shop/products/GrowthProteinHairOil-01_765x.jpg?v=1667202682",
+      "name": "HairOil",
+      "Createdat": "12/06/2023",
+      "status": "pending",
+      "price": "145",
+      "Quantity": "5"
+    },
+    {
+      "imageUrl": "https://th.bing.com/th/id/OIP.TeXYCGIyQqi_8P5LLfGQ4QHaHa?pid=ImgDet&rs=1",
+      "name": "Cashew Nuts",
+      "Createdat": "15/06/2023",
+      "status": "Successfull",
+      "price": "450",
+      "Quantity": "3"
+    },
+    {
+      "imageUrl": "https://www.smartphonesbd.com/images/phones/oppo-a33-2020.jpg",
+      "name": "mobile",
+      "Createdat": "16/06/2023",
+      "status": "pending",
+      "price": "20000",
+      "Quantity": "1"
+    },
+    {
+      "imageUrl": "https://n4.sdlcdn.com/imgs/f/4/g/Himalaya-Baby-Powder-200-gm-SDL289768392-1-e9cf0.jpg",
+      "name": "Baby Powder",
+      "Createdat": "18/06/2023",
+      "status": "pending",
+      "price": "200",
+      "Quantity": "2"
+    },
+    {
+      "imageUrl": "https://bellavitaorganic.com/cdn/shop/products/GrowthProteinHairOil-01_765x.jpg?v=1667202682",
+      "name": "HairOil",
+      "Createdat": "20/06/2023",
+      "status": "pending",
+      "price": "145",
+      "Quantity": "3"
+    },
+    {
+      "imageUrl": "https://www.smartphonesbd.com/images/phones/oppo-a33-2020.jpg",
+      "name": "mobile",
+      "Createdat": "21/06/2023",
+      "status": "pending",
+      "price": "20000",
+      "Quantity": "1"
+    },
+    {
+      "imageUrl": "https://i5.walmartimages.com/asr/d248064c-634a-4887-8538-a78157bb99a0_1.0b1f0e77bfdb16e57c23bb60a9c38478.jpeg",
+      "name": "Shampoo",
+      "Createdat": "25/06/2023",
+      "status": "pending",
+      "price": "100",
+      "Quantity": "6"
+    }
+  ]
+}

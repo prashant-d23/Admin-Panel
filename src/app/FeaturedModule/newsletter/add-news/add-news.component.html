@@ -1,0 +1,56 @@
+<!-- Main Container -->
+<div class="Body-Img" style="min-width: 100%;">
+
+    <!-- Card  -->
+    <div class="news-card-parent">
+        <mat-card class="add-news-card">
+            
+            <!-- card Heading -->
+            <h2 class="head"><b>Create News</b></h2>
+            <!-- Form Start -->
+            <mat-card-content>
+                <form class="example-form" [formGroup]="News" (ngSubmit)="NewsPush()">
+                    <!-- For News Title -->
+                    <mat-form-field class="card-field">
+                        <mat-label>News Title</mat-label>
+                        <input matInput placeholder="Add News Here" formControlName="news_head">
+                    </mat-form-field>
+                   <!-- For Article Content                 -->
+                    <mat-form-field class="card-field">
+                        <mat-label>Article Content</mat-label>
+                        <textarea formControlName="article" #message maxlength="1500" matInput
+                            style="min-height: 150px;" placeholder="Here you can write your article..."></textarea>
+                        <mat-hint align="start"><strong>News Article Content</strong> </mat-hint>
+                        <mat-hint align="end">{{message.value.length}} / 1500</mat-hint>
+                    </mat-form-field>
+                    <br><br>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button mat-raised-button color="primary" class="add-news-btn" type="submit">Add News</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">News Added Success</h4>
+        </div>
+        <div class="modal-body">
+          <p>News successfully adde.</p>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary" (click)="closePopup()">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

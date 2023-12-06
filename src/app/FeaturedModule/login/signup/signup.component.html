@@ -1,0 +1,54 @@
+<div class="container p-3">
+    <!-- <h3 class="text-center">Sign Up Here</h3> -->
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+        
+            
+                <label   for="fName">User Name</label>
+                <input type="text" name="fName" id="id1" class="form-control" formControlName="username">
+                <!-- <div *ngIf="userName?.errors?.['notgmail']" class="invalid-feedback d-block">
+                    <div>enter correct gmail</div>
+                </div> -->
+                <div class="row">
+                    <label class="form-check-label col-md-4 mx-2" for="Gender">Gender:</label>
+                    <div class=" col-md-3 mx-2">
+                        <input class="form-check-input " type="radio" name="gender" id="genMale" value="Male"
+                            formControlName="gender">
+                        <label class="form-check-label" for="genMale">Male</label>
+                    </div>
+                <div class=" col-md-4 ">
+                    <input class="form-check-input " type="radio" name="gender" id="genFemale" value="Female"
+                        formControlName="gender">
+                    <label class="form-check-label" for="genFemale">Female</label>
+                </div>
+                <!-- <div *ngIf="gender.touched&&gender.invalid">
+                    <div class="invalid-feedback d-block" *ngIf="gender.errors?.['required']">
+                         It is required
+                       </div>
+                       </div>-->
+                            </div>
+            
+                <label for="contactnum">Contact Number</label>
+                <input type="text" name="contactnum" id="id1" class="form-control" formControlName="contactnum">
+                
+                
+
+                <label for="password">Password</label>
+                <input type="text" name="password" id="id2" class="form-control" formControlName="password">
+            
+            
+                <!-- <label for="fName">Confirm Password</label>
+                <input type="text" name="lName" id="id2" class="form-control" formControlName="confirmPassword"> -->
+                <!-- <div *ngIf="confirmPassword?.errors?.['passwordMismatch']" class="invalid-feedback d-block">
+                    <div>Password and Confirm Password is not same</div>
+                </div> -->
+         
+            
+                
+           
+        
+        <button mat-button type="submit"  [disabled]="signUpForm.invalid" >Sign Up</button>
+        <div mat-dialog-actions>
+            <button mat-button mat-dialog-close>Close</button>
+          </div>
+    </form>
+    

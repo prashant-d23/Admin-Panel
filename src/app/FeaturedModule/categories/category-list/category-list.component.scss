@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+   
+  }
+  
+  .mat-mdc-table {
+    table-layout: auto;
+    // white-space: normal;
+    background-color: #FF007F;
+    border-radius: 15px 15px 0px 0px;
+    width: 75vw;
+  }
+  
+   td,th {
+     width: 25%;
+     background-color: white ;
+  }
+.pointer{
+    cursor: pointer;
+    color: blue;
+}
+.btn{
+  display: flex;
+  justify-content: flex-end;
+}
+.mat-header-cell {
+  background-color:rgb(244, 8, 51) 
+}

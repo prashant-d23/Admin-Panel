@@ -1,0 +1,147 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="container-style mt-3 p-3">
+        <form [formGroup]="productForm1" (ngSubmit)="createProduct()">
+
+          <div class="mb-3">
+            <label for="pName" class="form-label">Product Name</label>
+            <input type="text" class="form-control height" id="pName" formControlName="productName" [readOnly]="isEditable">
+
+      <div class="row" *ngIf="productName?.invalid">
+        <div class="invalid-feedback d-block" *ngIf="productName?.errors?.['required']">This field is required</div>
+      </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="textarea" class="form-label">Description</label>
+            <textarea id="textarea" rows="6" class="form-control" formControlName="description" [readOnly]="isEditable"></textarea>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-control height" id="category" formControlName="category">
+                <option value="">Select Category </option>
+                <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="brand" class="form-label">Brand</label>
+              <input type="text" class="form-control height" id="brand" formControlName="brand" [readOnly]="isEditable">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="status" class="form-label">Status</label>
+              <select class="form-control height" id="status" formControlName="status">
+                <option value="">Select Status </option>
+                <option *ngFor="let stat of status" [value]="stat">{{stat}}</option>
+              </select>
+            </div>
+
+
+            <div class="col-md-6">
+              <label for="sizes" class="form-label">Sizes</label>
+              <input type="text" class="form-control height" id="sizes" formControlName="sizes" [readOnly]="isEditable">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="colors" class="form-label">Colors</label>
+              <input type="text" class="form-control height" id="colors" formControlName="colors" [readOnly]="isEditable">
+            </div>
+            <div class="col-md-6">
+              <label for="tags" class="form-label">Tags</label>
+              <input type="text" class="form-control height" id="tags" formControlName="tags" [readOnly]="isEditable">
+            </div>
+          </div>
+
+          <!-- drag and drop  -->
+          <div class="mt-3 custom-border" >
+            <div class="image-upload">
+              <input type="file" (change)="onSelect($event)" accept="image/*" id="custom" formControlName="productImage">
+                <label for="custom" class="drag-area">
+                  <img *ngIf="ImageBase64String" [src]="ImageBase64String" alt="Selected Image" class="align-img">
+                  <div class="upload-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <span></span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- form-2 -->
+    <div class="col-md-4">
+      <div class="container-style mt-3 p-3">
+        <form [formGroup]="productForm2" (ngSubmit)="createProduct()">
+
+          <!-- product code  -->
+          <div class="mb-3">
+            <label for="code" class="form-label">Product Code</label>
+            <input type="text" class="form-control height" id="code" formControlName="productCode" [readOnly]="isEditable">
+          </div>
+
+          <!-- product SKU -->
+          <div class="mb-3">
+            <label for="sku" class="form-label">Product SKU</label>
+            <input type="text" class="form-control height" id="sku" formControlName="product_SKU" [readOnly]="isEditable">
+          </div>
+
+          <!-- gender  -->
+          <label for="gender" class="form-label ms-2">Gender</label><br>
+          <mat-radio-group aria-label="Select an option" class="mb-3" formControlName="gender" >
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+            <mat-radio-button value="kids">Kids</mat-radio-button>
+            <mat-radio-button value="others" class="d-block">Others</mat-radio-button>
+          </mat-radio-group>
+
+          <!-- quantity  -->
+          <div class="mt-2">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="text" class="form-control height" id="quantity" formControlName="qunatity" [readOnly]="isEditable">
+          </div>
+        </form>
+      </div>
+
+      <!-- form-3 -->
+      <div class="container-style mt-3 p-3">
+        <form [formGroup]="productForm3" (ngSubmit)="createProduct()">
+
+          <div class="mb-3">
+            <label for="regPrice" class="form-label">Regular Price</label>
+            <input type="text" class="form-control height" id="regPrice" formControlName="regularPrice"
+              placeholder="&#8377; 0.00" [readOnly]="isEditable">
+          </div>
+          <div class="mb-3">
+            <label for="salePrice" class="form-label">SalePrice</label>
+            <input type="text" class="form-control height" id="salePrice" formControlName="salePrice"
+              placeholder="&#8377; 0.00" [readOnly]="isEditable">
+          </div>
+          <div>
+            <mat-slide-toggle (click)="buttonState($event)" [disabled]="isEditable">Featured Product</mat-slide-toggle>
+          </div>
+
+          <div *ngIf="isEditable || backButton; then thenBlock; else elseBlock">
+          </div>
+          <ng-template #thenBlock>
+            <!-- Content when isEditable is true -->
+            <button mat-raised-button color="accent" style="max-width: 100%; width: 300px;" class="mt-3 ms-3 shade" routerLink="/product">Go Back</button>
+          </ng-template>
+          <ng-template #elseBlock>
+            <!-- Content when isEditable is false -->
+            <button mat-raised-button color="accent" type="submit" style="max-width: 100%; width: 300px;" class="mt-3 ms-3 shade" [disabled]="productForm1.invalid && productForm2.invalid && productForm3.invalid ">Create Product</button>
+          </ng-template>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

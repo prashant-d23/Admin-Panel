@@ -1,0 +1,18 @@
+<div class="container">
+<div class="container w-50 p-3 bg-danger bg-opacity-10 border  border-bottom-0 rounded-end mt-5">
+    <form [formGroup]="form" (submit)="createCategory()">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label" style="font-family: Arial, Helvetica, sans-serif;">Category Name</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" formControlName="category">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" formControlName="description"></textarea>
+      </div>
+      <button type="submit" *ngIf="!isUpdate" class="btn btn-danger bg-opacity-5" >Create Category</button>
+      <button type="submit" *ngIf="isUpdate" class="btn btn-danger bg-opacity-10" >Update Category</button>
+
+    </form>
+</div>
+</div>
+<router-outlet></router-outlet>

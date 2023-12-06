@@ -1,0 +1,39 @@
+//Heading image / All Margin
+.bg-news-img{
+    max-width:100% ;
+    color:rgb(250, 6, 120) ;
+    font-size: 40px;
+    background-image: url('https://st.depositphotos.com/1032463/3890/i/950/depositphotos_38904715-stock-photo-old-ripped-newspapers.jpg');
+    background-size: cover;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-position: 70% 25%;
+    background-blend-mode:darken;
+    padding: 30px;
+    min-width: 950px;
+    text-shadow: 2px 1px 5px rgb(95, 95, 95);
+    }
+
+//Table Data/Table Row
+  td,th {
+    width: 10%; 
+  }
+
+ 
+//Table
+// table {
+//     width: 700px;
+//     margin-left: 40px;
+   
+//   }
+  
+
+
+
+//   //Paginator
+//   .pagenator{
+//     width: 900px;
+//     margin-left: 40px;
+    
+//   }
+  

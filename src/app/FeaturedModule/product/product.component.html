@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <mat-toolbar>
+    <span>Dashboard</span><mat-icon class="mx-3 mt-2" style="font-size: 15px;">fiber_manual_record</mat-icon><span>Product List</span>
+    <span class="example-spacer"></span>
+    <button mat-stroked-button color="accent" style="border: 1px solid #FF007F;" routerLink="addproduct"> + Add Product</button>
+  </mat-toolbar>
+  <hr>
+</div>
+
+<div class="container">
+  <app-productlist></app-productlist>
+</div>
+
+<router-outlet></router-outlet>

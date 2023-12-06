@@ -1,0 +1,84 @@
+
+
+table {
+  width: 1000px;
+  height: 500px;
+}
+
+
+img {
+
+  width: 30px;
+  height: 30px;
+}
+
+.status{
+  background-color: lightblue;
+  color: navy;
+}
+
+// .container{
+//   box-shadow: 1px 2px 7px;
+// }
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+
+
+.ModalWindow{
+  position: fixed;
+  height: 400px;
+  width: 50%;
+  background-color:#fff;
+  z-index: 999;
+  top: 100px;
+  left: 25%;
+  
+
+}
+.overlay{
+  position: fixed;
+top:0px;
+height: 100%;
+width: 100%;
+z-index: 99;
+background-color: black;
+opacity: 0.8;
+}
+
+.modalheading{
+position: relative;
+background-color: brown;
+}
+.modalheading span{
+position: absolute;
+height: 30px;
+width: 30px;
+border-radius: 30px;
+background-color:gray;
+right: -10px;
+top: -10px;
+text-align: center;
+color: #fff;
+cursor: pointer;
+}
+
+/* .Modalcontent h3 img{
+background-color: aquamarine;
+height: 70px;
+width: 100px;
+text-align: center;
+} */
+
+.col{
+height: 400px;
+width: 300px;
+margin-top: 20px;
+}
+#imp{
+height: 200px;
+width: 200px;
+
+}

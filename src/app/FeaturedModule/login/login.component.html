@@ -1,0 +1,23 @@
+<div id="custom-margin">
+<div class="container w-50  border p-4 bg-light rounded">
+    <form [formGroup]="logIn" (ngSubmit)="logInDashBoard()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          name="user_email" formControlName="user_email">
+          
+         
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"
+          name="user_pwd" formControlName="user_pwd">
+        </div>
+    
+        <button type="submit" mat-button id="btn1" >LogIn</button>
+        <button mat-button (click)="openDialog()" id="btn2">SignUp </button>
+        <div *ngIf="showLogInError" class="invalid-feedback d-block" id="error" >* Enter Valid UserName And Password</div>
+      </form>
+      
+    </div>
+  </div>

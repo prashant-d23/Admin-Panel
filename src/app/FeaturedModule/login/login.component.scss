@@ -1,0 +1,31 @@
+.container {
+    box-shadow:rgb(232, 69, 121) 15px 15px 15px -15px,
+    rgb(232, 69, 121) 0px 20px 20px -20px, 
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 150px;
+    background: #B8C4C2;
+    border:2px solid  rgb(232, 69, 121);
+    
+}
+.form-label{
+    color:rgb(232, 69, 121);
+}
+#custom-margin {
+    border: 1px solid rgb(250, 249, 249);
+  }
+  .mat-mdc-button{
+    border: 1px solid rgb(232, 69, 121);
+    background-color: rgb(232, 69, 121);
+    color:white;
+    border-radius: 7px;
+    margin-top: 10px;
+    
+  }
+  #btn1,#btn2{
+    margin-left:100px;
+    width:150px;
+    color: white;
+  }
+  #error{
+    margin-left: 70px;
+  }

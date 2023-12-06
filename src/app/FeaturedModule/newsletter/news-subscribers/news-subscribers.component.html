@@ -1,0 +1,73 @@
+<div class="bg-news-img">
+  <h2 style="margin:auto;width: 150px;font-size: 20px;margin-left: 20px;"><b>Subscribers</b></h2>
+</div>
+<!-- Search Bar -->
+<mat-form-field style="min-width: 100%;">
+  <mat-label>Filter</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Search Subscriber" #input>
+</mat-form-field>
+
+
+<!-- Table -->
+<div class="mat-elevation-z8">
+
+  <table mat-table [dataSource]="SubSource" matSort>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef  mat-sort-header> Subsriber ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef  mat-sort-header> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef  mat-sort-header> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef  mat-sort-header> Delete Subscriber</th>
+      <td mat-cell *matCellDef="let element">
+
+         <!-- Bootstrap Modal -->
+         <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Unsubscribe</h4>
+              </div>
+              <div class="modal-body">
+                <p>Are You Sure To delete this subscriber from list.</p>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" (click)="deleteSubs(element)">
+                  Delete
+                </button>
+                <button type="button" class="btn btn-secondary" (click)="closePopup()">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <mat-icon (click)="deleteSubs(element)">delete_forever</mat-icon>
+
+       
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedSubs"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedSubs;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>

@@ -1,0 +1,55 @@
+
+<nav class="navbar bg-secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class=" d-flex flex-row mb-3" id="id1">
+    <div class="p-2">
+      <div>
+        <h4>Daily Earnings</h4>
+        <h2>250000<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="monetization_on"></mat-icon>
+        </h2>
+        </div>
+    </div>
+    <div class="p-2">
+      <div>
+        <h4>Daily Orders</h4>
+        <h2>124 <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="assignment"></mat-icon>
+        </h2>
+        </div>
+    </div>
+    <div class="p-2">
+      <div>
+        <h4>Signup Users</h4>
+        <h2>1521<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_box"></mat-icon>
+        </h2>
+        </div>
+    </div>
+    <div class="p-2">
+      <div>
+        <h4>Total Products</h4>
+        <h2>787<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        </h2>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="row" id="id2">
+
+    <highcharts-chart
+      [Highcharts]="Highcharts"
+      [options]="linechart"
+
+    >
+    </highcharts-chart>
+    <highcharts-chart
+      [Highcharts]="Piecharts"
+      [options]="circle"
+
+    >
+    </highcharts-chart>
+  </div>
+
